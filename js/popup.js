@@ -1,4 +1,21 @@
 // Init logic
+class bankAccount{
+	customerName;
+	balance=0;
+
+	constructor(customerName,balance){
+		this.customerName=customerName;
+		this.balance=balance;
+
+	}
+	deposit(amount){
+		this.balance+=amount;
+	}
+}
+const ankushAccount=new bankAccount('Ankush',100000);
+ankushAccount.deposit(2000);
+
+console.log('ankushAccount---- '+ankushAccount)
 const init = () => {
 	// Get elements
 	var input = $('#sidInput');
